@@ -1,0 +1,63 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'VT323', monospace; }
+
+body {
+  background-color: #14141f;
+  position: relative; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding-top: 3rem; }
+
+.circle {
+  height: 10rem;
+  width: 10rem;
+  background-color: #234;
+  border-radius: 5rem;
+  margin: 0 1.5rem;
+  transition: all .5s;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .circle__icon {
+    color: #fff; }
+  .circle:hover {
+    width: 50rem;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem; }
+    .circle:hover > .list {
+      visibility: visible;
+      opacity: 1; }
+
+.list {
+  list-style: none;
+  font-size: 1.6rem;
+  color: #fff;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  justify-content: flex-end;
+  padding-top: 2.5rem; }
+  .list__item {
+    margin-right: 1.5rem;
+    font-size: 2.5rem; }
+  .list__link {
+    text-decoration: none;
+    color: #fff; }
+    .list__link:hover {
+      color: #00b36b; }

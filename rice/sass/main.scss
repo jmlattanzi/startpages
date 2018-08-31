@@ -1,0 +1,113 @@
+// variables
+$bg-color: #234;
+$color-border: #fff;
+$color-text: #fff;
+$color-container: #14141f;
+$color-social: #ff8566;
+$color-media: #33ff99;
+$color-bored: #668cff;
+
+// browser reset
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'VT323', monospace;
+}
+
+body {
+    position: relative;
+    background-color: $bg-color;
+}
+
+.border {
+    border: 8px solid $color-border;
+}
+
+.container {
+    height: 30rem;
+    width: 70rem;
+    background-color: $color-container;
+    z-index: -1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding-left: 5rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: center;
+
+    &__categories {
+        display: flex;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+        &--item {
+            margin: 1rem;
+            list-style: none;
+            color: $color-text;
+            text-decoration: none;
+
+            &--social {
+                color: $color-social;
+            }
+
+            &--media {
+                color: $color-media;
+            }
+
+            &--bored {
+                color: $color-bored;
+            }
+        }
+
+        &--item-link {
+            text-decoration: none;
+            color: $color-text;
+
+            &--social:hover {
+                color: $color-social;
+            }
+
+            &--media:hover {
+                color: $color-media;
+            }
+
+            &--bored:hover {
+                color: $color-bored;
+            }
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }
+}
+
+.subcontainer {
+    height: 16rem;
+    width: 40rem;
+    background-color: $color-container;
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(10%, 50%);
+    color: $color-text;
+    padding: 3rem;
+
+    &__time {
+        font-size: 8rem;
+        text-align: center;
+    }
+}
