@@ -1,0 +1,63 @@
+// variables
+$bg-color: #6699cc;
+$color-container: #fff;
+
+// reset
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: $bg-color;
+    text-align: center;
+    padding: 2rem;
+}
+
+.header {
+    font-size: 2rem;
+    padding: 4rem;
+}
+
+.container {
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+    &__project {
+        background-color: $color-container;
+        padding: 1rem;
+        border-radius: 2rem;
+        box-shadow: 0 6px 8px rgba(#000, 0.5);
+
+        &--image {
+            height: 20rem;
+            width: 40rem;
+            margin-bottom: 2rem;
+
+            & > img {
+                width: 100%;
+                border-radius: 3rem;
+            }
+        }
+
+        &--button {
+            text-decoration: none;
+            color: #fff;
+            border: 3px solid salmon;
+            background-color: salmon;
+            border-radius: 2rem;
+            padding: 3px 2rem;
+        }
+    }
+}

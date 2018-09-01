@@ -1,0 +1,22 @@
+{
+  "name": "startpages",
+  "version": "1.0.0",
+  "description": "This is an ongoing collection of desktop startpages. They are designed for desktop browsers unless otherwise specified and will most likely not work on mobile browsers or resolutions. I plan on making these live sites soon so you can play around with them, so stay tuned for that.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmlattanzi/startpages.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmlattanzi/startpages/issues"
+  },
+  "homepage": "https://github.com/jmlattanzi/startpages#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
