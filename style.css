@@ -42,7 +42,8 @@ body {
     .container__project--button {
       text-decoration: none;
       color: #fff;
-      border: 3px solid salmon;
-      background-color: salmon;
+      background-color: #fa8072;
       border-radius: 2rem;
-      padding: 3px 2rem; }
+      padding: 6px 2rem; }
+      .container__project--button:hover {
+        background-color: #f84d3a; }
