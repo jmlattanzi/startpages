@@ -14,7 +14,8 @@ body {
 
 .header {
   font-size: 2rem;
-  padding: 4rem; }
+  padding: 4rem;
+  color: #fff; }
 
 .container {
   font-size: 2rem;
