@@ -52,6 +52,9 @@ body {
         @media (max-width: 600px) {
           .container__project--image > img {
             width: 70%; } }
+        @media (max-width: 1200px) {
+          .container__project--image > img {
+            width: 70%; } }
     .container__project--button {
       text-decoration: none;
       color: #fff;
