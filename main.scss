@@ -38,8 +38,13 @@ body {
     &__project {
         background-color: $color-container;
         padding: 1rem;
+        padding-bottom: 2rem;
         border-radius: 2rem;
         box-shadow: 0 6px 8px rgba(#000, 0.5);
+
+        &:hover {
+            box-shadow: 0 8px 10px rgba(#000, 0.8);
+        }
 
         &--image {
             height: 20rem;
